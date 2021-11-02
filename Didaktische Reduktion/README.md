@@ -41,17 +41,39 @@ In der folgenden Dokumentation ist die Installation, sowie Konfiguration samt al
 • Nach dem Erhalt der SD Karte von der Lehrperson muss als erstes die Paketliste aktualisiert werden<br>
 
 ### etcd installieren
-• Vorraussetzung für die Installation vom OwnCloud Dienst ist der etcd. Finden Sie im Internet heraus, warum dieser so wichtig ist und wie man ihn korrekt installiert.
-• Nach der Installation kommt man zur Konfiguration. Fügen Sie folgende Zeile in der Konfigurationsdatei, welche unter `/etc/default/etcd` zu finden ist: `ETCD_UNSUPPORTED_ARCH=arm`
+• Vorraussetzung für die Installation vom OwnCloud Dienst ist der etcd. Finden Sie im Internet heraus, warum dieser so wichtig ist und wie man ihn korrekt installiert.<br>
+• Nach der Installation kommt man zur Konfiguration. Fügen Sie folgende Zeile in der Konfigurationsdatei, welche unter `/etc/default/etcd` zu finden ist: `ETCD_UNSUPPORTED_ARCH=arm`<br
 • Zu guter letzt muss nur noch der Service gestartet werden: `sudo service etcd start` 
 
-
 ### Owncloud Infinite Scale Binary herunterladen und ausführen
+
+Als erstes muss man den Build vom Downloadserver herunterladen:<br>
+`curl https://download.owncloud.com/ocis/ocis/1.1.0/ocis-1.1.0-linux-arm --output ocis-1.1.0-linux-arm`<br>
+
+Anschliessend muss der Build ausgeführt werden. Bei Bedarf von Hilfe im Abschnitt Hilfestellung nachschauen.
+
+Nun muss man ein Skript erstellen, welches die OwnCloud Instanz startet. Dem Skript muss mitgegeben werden, dass etcd verwendet werden muss.
+
+![startocis.sh](/img/startocis.png)
+
+Das eben erstellt Skript ist noch ein normales Textdokument und muss ausführbar gemacht werden. Finden Sie im Internet heraus, wie Sie ein Textdokument ausfürhbar machen können.
+
+Zum Schluss muss nur noch das Skript gestartet werden.
+
+## Zugreifen
+
+Die Installation und Konfiguration ist abgeschlossen. Sie können nun wie folgt auf das Web-Interface zugreifen: `https://<hostname>:9200`
 
 
 
 ### Hilfestellung (Tipps, Quellen...)
-- - -
+
+Um den Build auszuführen gibt man folgenden Befehl ein: `chmod 755` und das gewünschte Programm (in unserem Fall `./ocis-1.1.0-linux-arm`)
+
+Tipp um Skripts ausführbar zu machen: `sudo chmod 755`
+
+Skripts können ausgeführt werden, indem man sudo und den Skriptnamen im Terminal eingibt.
+
 ## Qualitätskontrolle (Prüfen der Funktionalität mit Ablauf von Kommandos und entsprechenden Outputs)
 - - -
 ## Error-Handling
