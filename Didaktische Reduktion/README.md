@@ -63,9 +63,9 @@ Zum Schluss muss nur noch das Skript gestartet werden.
 ## Zugreifen
 
 Die Installation und Konfiguration ist abgeschlossen. Sie können nun wie folgt auf das Web-Interface zugreifen: `https://<hostname>:9200`
-
+- - -
 ### Hilfestellung (Tipps, Quellen...)
-- - - 
+
 Um den Build auszuführen gibt man folgenden Befehl ein: `chmod 755` und das gewünschte Programm (in unserem Fall `./ocis-1.1.0-linux-arm`)
 
 Tipp um Skripts ausführbar zu machen: `sudo chmod 755`
