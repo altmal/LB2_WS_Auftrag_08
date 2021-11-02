@@ -42,7 +42,7 @@ In der folgenden Dokumentation ist die Installation, sowie Konfiguration samt al
 
 ### etcd installieren
 • Vorraussetzung für die Installation vom OwnCloud Dienst ist der etcd. Finden Sie im Internet heraus, warum dieser so wichtig ist und wie man ihn korrekt installiert.<br>
-• Nach der Installation kommt man zur Konfiguration. Fügen Sie folgende Zeile in der Konfigurationsdatei, welche unter `/etc/default/etcd` zu finden ist: `ETCD_UNSUPPORTED_ARCH=arm`<br
+• Nach der Installation kommt man zur Konfiguration. Fügen Sie folgende Zeile in der Konfigurationsdatei, welche unter `/etc/default/etcd` zu finden ist: `ETCD_UNSUPPORTED_ARCH=arm`<br>
 • Zu guter letzt muss nur noch der Service gestartet werden: `sudo service etcd start` 
 
 ### Owncloud Infinite Scale Binary herunterladen und ausführen
