@@ -37,8 +37,17 @@ In der folgenden Dokumentation ist die Installation, sowie Konfiguration samt al
    • Neuste OS Version von Raspberry Pi inkl. Updates<br>
 - - -
 ## Installationsanleitung (Didaktisch reduzierte Anleitung. Lernende sollen eigene Lösungswege realisieren)
-• Paketliste aktualisieren<br>
-• 
+### Raspberry Pi Betriebssystem updatend <br>
+• Nach dem Erhalt der SD Karte von der Lehrperson muss als erstes die Paketliste aktualisiert werden<br>
+
+### etcd installieren
+• Vorraussetzung für die Installation vom OwnCloud Dienst ist der etcd. Finden Sie im Internet heraus, warum dieser so wichtig ist und wie man ihn korrekt installiert.
+• Nach der Installation kommt man zur Konfiguration. Fügen Sie folgende Zeile in der Konfigurationsdatei, welche unter `/etc/default/etcd` zu finden ist: `ETCD_UNSUPPORTED_ARCH=arm`
+• Zu guter letzt muss nur noch der Service gestartet werden: `sudo service etcd start` 
+
+### Owncloud Infinite Scale Binary herunterladen und ausführen
+
+
 
 ### Hilfestellung (Tipps, Quellen...)
 - - -
