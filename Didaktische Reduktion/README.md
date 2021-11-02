@@ -71,9 +71,9 @@ Um den Build auszuführen gibt man folgenden Befehl ein: `chmod 755` und das gew
 Tipp um Skripts ausführbar zu machen: `sudo chmod 755`
 
 Skripts können ausgeführt werden, indem man sudo und den Skriptnamen im Terminal eingibt.
-
-## Qualitätskontrolle (Prüfen der Funktionalität mit Ablauf von Kommandos und entsprechenden Outputs)
 - - -
+## Qualitätskontrolle (Prüfen der Funktionalität mit Ablauf von Kommandos und entsprechenden Outputs)
+
 ## Error-Handling
 Falls die Installation am Ende nicht ordnungsgemäss funktioniert, kann dies mehrere Gründe haben. Weiter unten finden Sie die gängigsten Fehler aufgelistet.
 ### Allgemeine Schritte vor weiterem Debugging zwingend ausführen
