@@ -45,6 +45,7 @@ In der folgenden Dokumentation ist die Installation, sowie Konfiguration samt al
 • Nach der Installation kommt man zur Konfiguration. Fügen Sie folgende Zeile in der Konfigurationsdatei, welche unter `/etc/default/etcd` zu finden ist: `ETCD_UNSUPPORTED_ARCH=arm`
 • Zu guter letzt muss nur noch der Service gestartet werden: `sudo service etcd start` 
 
+
 ### Owncloud Infinite Scale Binary herunterladen und ausführen
 
 
